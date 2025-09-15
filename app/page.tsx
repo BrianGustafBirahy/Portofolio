@@ -175,6 +175,7 @@ export default function Home() {
           </p>
           <div className="flex items-center justify-between">
             <img src="/assets/images/private/Internet of Things (2).png" alt="image" className="w-12 rounded-md sm:block hidden" />
+{/* Maintainance */}
             {/* <div className="flex items-center gap-6 text-white">
               <div>
                 <h1 className="text-2xl sm:text-3xl md:text-4xl mb-1">
@@ -194,6 +195,7 @@ export default function Home() {
                 
               </div>
             </div> */}
+{/* Maintainance */}
           </div>
         </div>
 
@@ -257,20 +259,27 @@ export default function Home() {
         <p className="text-base/loose text-center opacity-50">Here are some highlights from my experience</p>
         <div className="proyek-box mt-14 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 ">
           {listExperience.map((experience) => (
-            <div key={experience.id} className="p-4 bg-zinc-800 rounded-md">
+            <div key={experience.id} className="p-4 bg-zinc-800 rounded-md flex flex-col justify-between">
               <div className="w-full h-48 flex items-center justify-center bg-gray-100">
                 <img src={experience.gambar} alt="experience Image" loading="lazy" className="max-h-full max-w-full object-contain"/>
               </div>
-              <div>
-                <h1 className="text-2xl font-bold my-4">{experience.nama}</h1>
-                <p className="text-base/loose mb-4">{experience.desk}</p>
-                <div className="flex flex-wrap gap-2 ">
-                  {experience.tools.map((tool, index) => (
-                    <p className="py-1 px-3 border border-zinc-500 bg-zinc-600 rounded-md font-semibold" key={index}>{tool}</p>
-                  ))}
+              <div className="flex flex-col flex-grow">
+                <h1 className="text-2xl font-bold mt-2 mb-0 min-h-[64px] line-clamp-2" >{experience.nama}</h1>
+                <p className="text-base/loose mb-4 mt-1 sm:-mt-5 md:-mt-6 lg:-mt-8">{experience.desk}</p>
+
+                <div className="mt-auto">
+                  <div className="flex flex-wrap gap-2 mb-3">
+                    {experience.tools.map((tool, index) => (
+                      <p className="py-1 px-3 border border-zinc-500 bg-zinc-600 rounded-md font-semibold" key={index}>{tool}</p>
+                    ))}
+                  </div>
                 </div>
-                <div className="mt-8 text-center">
-                  <a href={experience.link} className="bg-blue-700 p-3 rounded-lg block border border-zinc-600 hover:bg-blue-600 ">View Documentation</a>
+                
+                <div className="text-center">
+                  <a href={experience.link} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="bg-blue-700 p-3 rounded-lg block border border-zinc-600 hover:bg-blue-600 ">View Documentation</a>
                 </div>
               </div>
             </div>

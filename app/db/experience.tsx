@@ -3,7 +3,7 @@ export const listExperience = [
     {
       id: 1,
       nama: "GenBI | GenBI Educare",
-      desk: "Contributed to the GenBI Educare program in Pulau Gangga by promoting financial literacy, digital payment adoption (QRIS), consumer protection, and environmental awareness, while also documenting and sharing the impact of the activities with the community",
+      desk: "Contributed to the GenBI Educare program in Pulau Gangga by promoting financial literacy, digital payment adoption (QRIS), consumer protection, and environmental awareness, while also documenting and sharing the impact of the activities with the community ",
       gambar: "/assets/images/experience/ed.jpg",
       tools: ["Documentation", "Teaching", "Knowledge Sharing","Leadership"],
       link : "https://www.instagram.com/reel/DGMl5fUzIIJ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
