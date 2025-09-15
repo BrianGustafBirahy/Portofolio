@@ -19,7 +19,7 @@ export const Navbar = () => {
 
   return (
     <nav className="w-full fixed top-0 left-0 z-50 bg-transparent backdrop-blur-md">
-      <div className="max-w-7xl mx-auto px-0 py-4 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto -px-3 py-4 flex items-center justify-between">
         
         {/* Kiri - Logo */}
         <h1

@@ -35,7 +35,7 @@ export default function Home() {
       <Navbar />
       
       {/* <Preloader/> */}
-      <div className="container mx-auto min-h-screen pt-24 sm:pt-28 md:pt-32 xl:pt-16 xl:gap-0 gap-6 grid " id="home"> 
+      <div className="container mx-auto min-h-screen -mt-6 pt-24 sm:pt-28 md:pt-32 xl:pt-16 xl:gap-0 gap-6 grid " id="home"> 
         <div className="grid md:grid-cols-12 grid-cols-1">
           <div className="col-span-6">
             <div className="flex items-center h-full p-4 sm:p-8 md:p-20">
@@ -116,7 +116,7 @@ export default function Home() {
                     Download CV
                   </GradientText>
                 </div> */}
-                <div className="flex flex-col gap-2 mb-12 sm:gap-4">
+                <div className="flex flex-col gap-2 mb-12 -mt-6 sm:gap-4">
                   <a
                     href="https://drive.google.com/file/d/1L_lYCYusfs6rrKzYqsO_Rx3W6umRrA3r/view?usp=sharing"
                     target="_blank"
