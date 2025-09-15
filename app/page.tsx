@@ -270,7 +270,7 @@ export default function Home() {
                 <div className="mt-auto">
                   <div className="flex flex-wrap gap-2 mb-3">
                     {experience.tools.map((tool, index) => (
-                      <p className="py-1 px-3 border border-zinc-500 bg-zinc-600 rounded-md font-semibold" key={index}>{tool}</p>
+                      <p className="text-sm sm:text-base md:text-sm lg:text-base py-1 px-2 sm:px-3 border border-zinc-500 bg-zinc-600 rounded-md font-semibold" key={index}>{tool}</p>
                     ))}
                   </div>
                 </div>
