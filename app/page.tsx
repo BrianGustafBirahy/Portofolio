@@ -140,7 +140,7 @@ export default function Home() {
           </div>
           <div className="col-span-6 relative order-1 md:order-2 -translate-y-10 md:-translate-y-10 pt-24">
           <div className="absolute top-0 left-0 w-full md:hidden p-2 sm:p-4 bg-black rounded-md">
-            <ScrollVelocity texts={['About Me', 'Brian Gustaf Birahy']} 
+            <ScrollVelocity texts={['- About Me', '- Brian Gustaf Birahy']} 
             className="inline-block whitespace-nowrap
              font-extrabold text-3xl sm:text-4xl tracking-widest
              text-transparent bg-clip-text
