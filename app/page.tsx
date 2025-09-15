@@ -85,7 +85,7 @@ export default function Home() {
                   />
                   <SplitText
                   text="IoT Developer"
-                  className="text-3xl sm:text-4xl md:text-6xl font-semibold text-start text-[#4169E1]"
+                  className="text-2xl sm:text-4xl md:text-6xl font-semibold text-start text-[#4169E1]"
                   delay={100}
                   duration={0.6}
                   ease="power3.out"
