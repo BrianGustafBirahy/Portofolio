@@ -175,7 +175,7 @@ export default function Home() {
           </p>
           <div className="flex items-center justify-between">
             <img src="/assets/images/private/Internet of Things (2).png" alt="image" className="w-12 rounded-md sm:block hidden" />
-            <div className="flex items-center gap-6 text-white">
+            {/* <div className="flex items-center gap-6 text-white">
               <div>
                 <h1 className="text-2xl sm:text-3xl md:text-4xl mb-1">
                   45 <span className="text-blue-600">+</span>
@@ -193,7 +193,7 @@ export default function Home() {
                 </p>
                 
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -270,7 +270,7 @@ export default function Home() {
                   ))}
                 </div>
                 <div className="mt-8 text-center">
-                  <a href="#" className="bg-blue-700 p-3 rounded-lg block border border-zinc-600 hover:bg-blue-600 ">View Documentation</a>
+                  <a href={experience.link} className="bg-blue-700 p-3 rounded-lg block border border-zinc-600 hover:bg-blue-600 ">View Documentation</a>
                 </div>
               </div>
             </div>
