@@ -27,3 +27,22 @@ body {
     text-wrap: balance;
   }
 }
+
+/* tambahkan di globals.css atau tailwind.css */
+.text-outline-blue {
+  color: white;
+  text-shadow:
+    -1px -1px 0 #3b82f6,  
+     1px -1px 0 #3b82f6,
+    -1px  1px 0 #3b82f6,
+     1px  1px 0 #3b82f6;
+}
+
+.text-glow-blue {
+  color: white;
+  text-shadow: 
+    0 0 5px #3b82f6,
+    0 0 10px #3b82f6,
+    0 0 20px #3b82f6;
+}
+

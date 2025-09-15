@@ -14,156 +14,11 @@ import { listProyek } from "./db/proyek";
 import { tools } from "./db/tools";
 import Footer from "./components/Footer/footer";
 import Preloader from "./components/PreLoader/preloader";
-// import CircularText from "./components/CircularText/CircularText";
 import ScrollVelocity from "./components/ScrollVelocity/ScrollVelocity";
+// import CircularText from "./components/CircularText/CircularText";
 import 'animate.css';
 
 export default function Home() {
-  const data = [
-    {
-      title: "2024",
-      content: (
-        <div>
-          <p className="mb-8 text-xs font-normal text-white md:text-sm dark:text-neutral-200">
-          Contributed to the GenBI Educare program in Pulau Gangga by promoting financial literacy, digital payment adoption (QRIS), consumer protection, and environmental awareness, while also documenting and sharing the impact of the activities with the community.
-          </p>
-          <div className="grid grid-cols-2 gap-4">
-            <img
-              src="/assets/images/experience/ed.jpg"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-            />
-            <img
-              src="/assets/images/experience/ed2.jpg"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-            />
-            {/* <img
-              src="https://assets.aceternity.com/templates/startup-3.webp"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-            />
-            <img
-              src="https://assets.aceternity.com/templates/startup-4.webp"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-            /> */}
-          </div>
-        </div>
-      ),
-    },
-    // {
-    //   title: "Early 2023",
-    //   content: (
-    //     <div>
-    //       <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-    //         I usually run out of copy, but when I see content this big, I try to
-    //         integrate lorem ipsum.
-    //       </p>
-    //       <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-    //         Lorem ipsum is for people who are too lazy to write copy. But we are
-    //         not. Here are some more example of beautiful designs I built.
-    //       </p>
-    //       <div className="grid grid-cols-2 gap-4">
-    //         <img
-    //           src="https://assets.aceternity.com/pro/hero-sections.png"
-    //           alt="hero template"
-    //           width={500}
-    //           height={500}
-    //           className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-    //         />
-    //         <img
-    //           src="https://assets.aceternity.com/features-section.png"
-    //           alt="feature template"
-    //           width={500}
-    //           height={500}
-    //           className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-    //         />
-    //         <img
-    //           src="https://assets.aceternity.com/pro/bento-grids.png"
-    //           alt="bento template"
-    //           width={500}
-    //           height={500}
-    //           className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-    //         />
-    //         <img
-    //           src="https://assets.aceternity.com/cards.png"
-    //           alt="cards template"
-    //           width={500}
-    //           height={500}
-    //           className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-    //         />
-    //       </div>
-    //     </div>
-    //   ),
-    // },
-    // {
-    //   title: "Changelog",
-    //   content: (
-    //     <div>
-    //       <p className="mb-4 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-    //         Deployed 5 new components on Aceternity today
-    //       </p>
-    //       <div className="mb-8">
-    //         <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-    //           ✅ Card grid component
-    //         </div>
-    //         <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-    //           ✅ Startup template Aceternity
-    //         </div>
-    //         <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-    //           ✅ Random file upload lol
-    //         </div>
-    //         <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-    //           ✅ Himesh Reshammiya Music CD
-    //         </div>
-    //         <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-    //           ✅ Salman Bhai Fan Club registrations open
-    //         </div>
-    //       </div>
-    //       <div className="grid grid-cols-2 gap-4">
-    //         <img
-    //           src="https://assets.aceternity.com/pro/hero-sections.png"
-    //           alt="hero template"
-    //           width={500}
-    //           height={500}
-    //           className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-    //         />
-    //         <img
-    //           src="https://assets.aceternity.com/features-section.png"
-    //           alt="feature template"
-    //           width={500}
-    //           height={500}
-    //           className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-    //         />
-    //         <img
-    //           src="https://assets.aceternity.com/pro/bento-grids.png"
-    //           alt="bento template"
-    //           width={500}
-    //           height={500}
-    //           className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-    //         />
-    //         <img
-    //           src="https://assets.aceternity.com/cards.png"
-    //           alt="cards template"
-    //           width={500}
-    //           height={500}
-    //           className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
-    //         />
-    //       </div>
-    //     </div>
-    //   ),
-    // },
-  ];
-    
   return (
     <div className=" min-h-screen overflow-x-hidden bg-[#19222D]">
       <div className="fixed top-0 right-0 left-0 bottom-0 w-full h-full ">
@@ -282,7 +137,16 @@ export default function Home() {
             </div>
             
           </div>
-          <div className="col-span-6 relative -translate-y-10 ">
+          <div className="col-span-6 relative order-1 md:order-2 -translate-y-10 md:-translate-y-10 pt-24">
+          <div className="absolute top-0 left-0 w-full md:hidden p-2 sm:p-4 bg-black rounded-md">
+            <ScrollVelocity texts={['About Me', 'Brian Gustaf Birahy']} 
+            className="inline-block whitespace-nowrap
+             font-extrabold text-3xl sm:text-4xl tracking-widest
+             text-transparent bg-clip-text
+             bg-gradient-to-r from-cyan-400 to-blue-500
+             drop-shadow-[0_0_10px_rgba(0,255,255,0.8)]"
+            />
+          </div>
             <Lanyard position={[0, 0, 12]} gravity={[0, -40, 0]} />
             {/* <CircularText
               className="absolute top-10 right-10"
@@ -293,13 +157,20 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className="  mx-auto hidden sm:block bg-black p-4 rounded-md">
+        <ScrollVelocity 
+        texts={['About Me', 'Brian Gustaf Birahy']}
+        className="inline-block text-transparent bg-clip-text font-extrabold bg-gradient-to-r from-cyan-400 to-blue-500
+        drop-shadow-[0_0_10px_rgba(0,255,255,0.8)]"
+        />
+      </div>
 
 {/* Tentang */}
       <div className="relative z-10 tentang mt-32 px-20 py-20 " id="about">
         <div className="xl:w-2/3 lg:w-3/4 w-full mx-auto py-5 px-5 bg-zinc-800 rounded-lg">
           <img src="/assets/images/private/Internet of Things (2).png" alt="image" className="w-12 rounded-md mb-10 sm:hidden" />
           <p className = "text-sm sm:text-base md:text-lg leading-relaxed mb-10 text-white">
-          Computer Science graduate majoring in Informatics with strong interest in Internet of Things (IoT), microcontroller systems, and smart automation. Experienced in developing IoT prototypes integrating sensors, actuators, and cloud platforms. Skilled in data management, system analysis, and project implementation, recognized as disciplined, structured, and adaptive in supporting technology-driven solutions.
+          Hi there! I’m a Computer Science graduate with a focus in Informatics who loves exploring how technology can make life smarter and easier. I’m especially into IoT, microcontrollers, and automation, and I enjoy turning ideas into working prototypes using sensors, actuators, and cloud platforms. Beyond the tech side, I bring an organized and adaptive approach to every project, making sure solutions are not only functional but also impactful.
           </p>
           <div className="flex items-center justify-between">
             <img src="/assets/images/private/Internet of Things (2).png" alt="image" className="w-12 rounded-md sm:block hidden" />
