@@ -243,7 +243,7 @@ export default function Home() {
                   ))}
                 </div>
                 <div className="mt-8 text-center">
-                  <a href="#" className="bg-blue-700 p-3 rounded-lg block border border-zinc-600 hover:bg-blue-600 ">View Website</a>
+                  <a href={proyek.link} className="bg-blue-700 p-3 rounded-lg block border border-zinc-600 hover:bg-blue-600 ">View Website</a>
                 </div>
               </div>
             </div>
