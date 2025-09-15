@@ -182,7 +182,7 @@ export default function Home() {
       <div className="container mx-auto min-h-screen pt-24 sm:pt-28 md:pt-32 xl:pt-16 xl:gap-0 gap-6 grid " id="home"> 
         <div className="grid md:grid-cols-12 grid-cols-1">
           <div className="col-span-6">
-            <div className="flex items-center h-full">
+            <div className="flex items-center h-full p-20">
               <div className="flex flex-col gap-4">
                 <AnimatedContent
                 distance={150}
@@ -196,50 +196,50 @@ export default function Home() {
                 threshold={0.2}
                 delay={0.3}
                 >
-                  <div className="flex items-center gap-2">
-                  <h1 className="text-xl sm:text-2xl md:text-3xl text-white font-bold">I'm Ready For Job</h1>
-                    <RotatingText 
-                    texts={['Internet Of Things', 'Web Development', 'Design UI', 'Data Scientist']}
-                    mainClassName="px-2 sm:px-2 md:px-3 bg-[#4169E1] text-black overflow-hidden py-0.5 sm:py-1 justify-center rounded-lg text-2xl font-bold inline-flex transition-all"
-                    staggerFrom={"last"}
-                    initial={{ y: "100%" }}
-                    animate={{ y: 0 }}
-                    exit={{ y: "-120%" }}
-                    staggerDuration={0.025}
-                    splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
-                    transition={{ type: "spring", damping: 30, stiffness: 400 }}
-                    rotationInterval={2000}
-                    />
+                  <div className="flex flex-col sm:flex-row sm:items-center gap-2">
+                    <h1 className="text-lg sm:text-xl md:text-3xl text-white font-bold">I'm Ready For Job</h1>
+                      <RotatingText 
+                      texts={['Internet Of Things', 'Web Development', 'Design UI', 'Data Scientist']}
+                      mainClassName="px-2 sm:px-3 md:px-4 bg-[#4169E1] text-black overflow-hidden py-0.5 sm:py-1 md:py-1.5 justify-center rounded-lg text-sm sm:text-lg md:text-2xl font-bold inline-flex transition-all"
+                      staggerFrom={"last"}
+                      initial={{ y: "100%" }}
+                      animate={{ y: 0 }}
+                      exit={{ y: "-120%" }}
+                      staggerDuration={0.025}
+                      splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
+                      transition={{ type: "spring", damping: 30, stiffness: 400 }}
+                      rotationInterval={2000}
+                      />
                   </div>      
                 </AnimatedContent>
 
                 <div className="flex flex-col items-start">
-                <SplitText
-                text="I'm Brian Gustaf"
-                className="text-3xl sm:text-4xl md:text-6xl text-white font-semibold text-center"
-                delay={50}
-                duration={0.6}
-                ease="power3.out"
-                splitType="chars"
-                from={{ opacity: 0, y: 40 }}
-                to={{ opacity: 1, y: 0 }}
-                threshold={0.1}
-                rootMargin="-100px"
-                textAlign="center"
-                />
-                <SplitText
-                text="IoT Developer"
-                className="text-3xl sm:text-4xl md:text-6xl font-semibold text-start text-[#4169E1]"
-                delay={100}
-                duration={0.6}
-                ease="power3.out"
-                splitType="chars"
-                from={{ opacity: 0, y: 40 }}
-                to={{ opacity: 1, y: 0 }}
-                threshold={0.1}
-                rootMargin="-100px"
-                textAlign="center"
-                />
+                  <SplitText
+                  text="I'm Brian Gustaf"
+                  className="text-3xl sm:text-4xl md:text-6xl text-white font-semibold text-center"
+                  delay={50}
+                  duration={0.6}
+                  ease="power3.out"
+                  splitType="chars"
+                  from={{ opacity: 0, y: 40 }}
+                  to={{ opacity: 1, y: 0 }}
+                  threshold={0.1}
+                  rootMargin="-100px"
+                  textAlign="center"
+                  />
+                  <SplitText
+                  text="IoT Developer"
+                  className="text-3xl sm:text-4xl md:text-6xl font-semibold text-start text-[#4169E1]"
+                  delay={100}
+                  duration={0.6}
+                  ease="power3.out"
+                  splitType="chars"
+                  from={{ opacity: 0, y: 40 }}
+                  to={{ opacity: 1, y: 0 }}
+                  threshold={0.1}
+                  rootMargin="-100px"
+                  textAlign="center"
+                  />
                 </div>
 
                 <BlurText 
@@ -247,7 +247,7 @@ export default function Home() {
                   delay={50}
                   animateBy="words"
                   direction="top"
-                  className="text-xl mb-8 text-white"
+                  className="text-sm sm:text-base md:text-xl mb-8 text-white"
                   />
 
                 {/* <div className="flex items-center">
@@ -270,7 +270,7 @@ export default function Home() {
                       colors={["#40ffaa", "#4169E1", "#40ffaa", "#4169E1", "#40ffaa"]}
                       animationSpeed={3}
                       showBorder={false}
-                      className="px-3 py-2 sm:px-6 sm:py-3 rounded-lg border cursor-pointer"
+                      className="mx-auto px-2 py-1 sm:px-6 sm:py-3 rounded-lg border text-sm sm:text-base cursor-pointer"
                     >
                       Download CV <i className="ri-download-line ri-lg"></i>
                     </GradientText>
@@ -298,25 +298,28 @@ export default function Home() {
       <div className="relative z-10 tentang mt-32 px-20 py-20 " id="about">
         <div className="xl:w-2/3 lg:w-3/4 w-full mx-auto py-5 px-5 bg-zinc-800 rounded-lg">
           <img src="/assets/images/private/Internet of Things (2).png" alt="image" className="w-12 rounded-md mb-10 sm:hidden" />
-          <p className = "text-base/loose mb-10 text-white ">
+          <p className = "text-sm sm:text-base md:text-lg leading-relaxed mb-10 text-white">
           Computer Science graduate majoring in Informatics with strong interest in Internet of Things (IoT), microcontroller systems, and smart automation. Experienced in developing IoT prototypes integrating sensors, actuators, and cloud platforms. Skilled in data management, system analysis, and project implementation, recognized as disciplined, structured, and adaptive in supporting technology-driven solutions.
           </p>
           <div className="flex items-center justify-between">
             <img src="/assets/images/private/Internet of Things (2).png" alt="image" className="w-12 rounded-md sm:block hidden" />
             <div className="flex items-center gap-6 text-white">
               <div>
-                <h1 className="text-4xl mb-1">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl mb-1">
                   45 <span className="text-blue-600">+</span>
                 </h1>
-                <p>
+                <p className="text-sm sm:text-base md:text-lg">
                   Done Project
                 </p>
               </div>
               <div>
-                <h1 className="text-4xl mb-1">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl mb-1">
                   4 <span className="text-blue-600">+</span>
                 </h1>
+                <p className="text-sm sm:text-base md:text-lg">
                 Experience Years
+                </p>
+                
               </div>
             </div>
           </div>
