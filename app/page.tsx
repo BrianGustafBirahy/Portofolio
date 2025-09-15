@@ -160,7 +160,7 @@ export default function Home() {
       <div className="  mx-auto hidden sm:block bg-black p-4 rounded-md">
         <ScrollVelocity 
         texts={['About Me', 'Brian Gustaf Birahy']}
-        className="inline-block text-transparent bg-clip-text font-extrabold bg-gradient-to-r from-cyan-400 to-blue-500
+        className="inline-block text-transparent bg-clip-text font-extrabold text-6xl bg-gradient-to-r from-cyan-400 to-blue-500
         drop-shadow-[0_0_10px_rgba(0,255,255,0.8)]"
         />
       </div>
