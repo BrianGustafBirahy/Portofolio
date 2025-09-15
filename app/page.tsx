@@ -38,7 +38,7 @@ export default function Home() {
       <div className="container mx-auto min-h-screen pt-24 sm:pt-28 md:pt-32 xl:pt-16 xl:gap-0 gap-6 grid " id="home"> 
         <div className="grid md:grid-cols-12 grid-cols-1">
           <div className="col-span-6">
-            <div className="flex items-center h-full p-20">
+            <div className="flex items-center h-full p-4 sm:p-8 md:p-20">
               <div className="flex flex-col gap-4">
                 <AnimatedContent
                 distance={150}
@@ -52,7 +52,7 @@ export default function Home() {
                 threshold={0.2}
                 delay={0.3}
                 >
-                  <div className="flex flex-col sm:flex-row sm:items-center gap-2">
+                  <div className="flex flex-row items-center gap-2">
                     <h1 className="text-lg sm:text-xl md:text-3xl text-white font-bold">I'm Ready For Job</h1>
                       <RotatingText 
                       texts={['Internet Of Things', 'Web Development', 'Design UI', 'Data Scientist']}
@@ -116,7 +116,7 @@ export default function Home() {
                     Download CV
                   </GradientText>
                 </div> */}
-                <div className="flex flex-col gap-2 sm:gap-4">
+                <div className="flex flex-col gap-2 mb-12 sm:gap-4">
                   <a
                     href="https://drive.google.com/file/d/1L_lYCYusfs6rrKzYqsO_Rx3W6umRrA3r/view?usp=sharing"
                     target="_blank"
@@ -167,7 +167,7 @@ export default function Home() {
       </div>
 
 {/* Tentang */}
-      <div className="relative z-10 tentang mt-32 px-20 py-20 " id="about">
+      <div className="relative z-10 tentang mt-32 px-4 sm:px-8 md:px-20 py-20 " id="about">
         <div className="xl:w-2/3 lg:w-3/4 w-full mx-auto py-5 px-5 bg-zinc-800 rounded-lg">
           <img src="/assets/images/private/Internet of Things (2).png" alt="image" className="w-12 rounded-md mb-10 sm:hidden" />
           <p className = "text-sm sm:text-base md:text-lg leading-relaxed mb-10 text-white">
@@ -227,7 +227,7 @@ export default function Home() {
       </div>
 {/* Tentang */}
       {/* Proyek */}
-      <div className="relative z-10 text-white proyek mt-32 px-20 py-20" id="project">
+      <div className="relative z-10 text-white proyek mt-32 px-4 sm:px-8 md:px-20 py-20" id="project">
         <h1 className="text-center text-4xl font-bold mb-2 ">Project</h1>
         <p className="text-base/loose text-center opacity-50">Here are some projects I have completed</p>
         <div className="proyek-box mt-14 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 ">
@@ -254,7 +254,7 @@ export default function Home() {
       </div>
       {/* Proyek */}
       {/* Experience */}
-      <div className="relative z-10 text-white proyek mt-32 px-20 py-20" id="project">
+      <div className="relative z-10 text-white proyek mt-32 px-4 sm:px-8 md:px-20 py-20" id="project">
         <h1 className="text-center text-4xl font-bold mb-2 ">Organization Experience</h1>
         <p className="text-base/loose text-center opacity-50">Here are some highlights from my experience</p>
         <div className="proyek-box mt-14 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 ">
@@ -288,7 +288,7 @@ export default function Home() {
       </div>
       {/* Experience */}
       {/* Kontak */}
-      <div className="relative z-10 kontak mt-32 sm:p-10 p-0" id="contact">
+      <div className="relative z-10 kontak mt-32 px-4 sm:px-8 md:px-20 py-20" id="contact">
         <h1 className="text-white text-4xl mb-2 font-bold text-center">Contact</h1>
         <p className="text-white text-base/loose text-center mb-10 opacity-50">Let's Get in Touch!</p>
         <form action="https://formsubmit.co/briangustaf03work@gmail.com" method="POST" className="bg-zinc-800 p-10 sm:w-fit w-full mx-auto rounded-md" autoComplete="off">
@@ -313,7 +313,7 @@ export default function Home() {
       </div>
       {/* Kontak */}
 
-      <div className="relative z-10 text-white px-20 py-20">
+      <div className="relative z-10 text-white px-4 sm:px-8 md:px-20 py-20">
         <Footer/>
       </div>
       </div>
