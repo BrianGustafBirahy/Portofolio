@@ -270,7 +270,7 @@ export default function Home() {
                       colors={["#40ffaa", "#4169E1", "#40ffaa", "#4169E1", "#40ffaa"]}
                       animationSpeed={3}
                       showBorder={false}
-                      className="mx-auto px-2 py-1 sm:px-6 sm:py-3 rounded-lg border text-sm sm:text-base cursor-pointer"
+                      className="mx-auto md:mx-0 px-2 py-1 sm:px-6 sm:py-3 rounded-lg border text-sm sm:text-base cursor-pointer"
                     >
                       Download CV <i className="ri-download-line ri-lg"></i>
                     </GradientText>
