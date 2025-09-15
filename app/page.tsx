@@ -71,7 +71,7 @@ export default function Home() {
                 <div className="flex flex-col items-start">
                   <SplitText
                   text="I'm Brian Gustaf"
-                  className="text-3xl sm:text-4xl md:text-6xl text-white font-semibold text-center"
+                  className="text-2xl sm:text-4xl md:text-6xl text-white font-semibold text-center"
                   delay={50}
                   duration={0.6}
                   ease="power3.out"
