@@ -40,22 +40,22 @@ export const Navbar = () => {
             ${active ? "top-0 opacity-100" : "-top-10 opacity-0"}`}
         >
           <li>
-            <a href="#home" className="sm:text-lg text-base font-medium hover:text-purple-400 transition-colors">
+            <a href="#home" className="sm:text-lg text-base font-medium hover:text-blue-400 transition-colors">
               Home
             </a>
           </li>
           <li>
-            <a href="#about" className="sm:text-lg text-base font-medium hover:text-purple-400 transition-colors">
+            <a href="#about" className="sm:text-lg text-base font-medium hover:text-blue-400 transition-colors">
               About
             </a>
           </li>
           <li>
-            <a href="#project" className="sm:text-lg text-base font-medium hover:text-purple-400 transition-colors">
+            <a href="#project" className="sm:text-lg text-base font-medium hover:text-blue-400 transition-colors">
               Project
             </a>
           </li>
           <li>
-            <a href="#contact" className="sm:text-lg text-base font-medium hover:text-purple-400 transition-colors">
+            <a href="#contact" className="sm:text-lg text-base font-medium hover:text-blue-400 transition-colors">
               Contact
             </a>
           </li>
