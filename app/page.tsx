@@ -15,6 +15,7 @@ import { tools } from "./db/tools";
 import Footer from "./components/Footer/footer";
 import Preloader from "./components/PreLoader/preloader";
 import ScrollVelocity from "./components/ScrollVelocity/ScrollVelocity";
+import { listExperience } from "./db/experience";
 // import CircularText from "./components/CircularText/CircularText";
 import 'animate.css';
 
@@ -250,6 +251,33 @@ export default function Home() {
         </div>
       </div>
       {/* Proyek */}
+      {/* Experience */}
+      <div className="relative z-10 text-white proyek mt-32 px-20 py-20" id="project">
+        <h1 className="text-center text-4xl font-bold mb-2 ">Organization Experience</h1>
+        <p className="text-base/loose text-center opacity-50">Here are some highlights from my experience</p>
+        <div className="proyek-box mt-14 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 ">
+          {listExperience.map((experience) => (
+            <div key={experience.id} className="p-4 bg-zinc-800 rounded-md">
+              <div className="w-full h-48 flex items-center justify-center bg-gray-100">
+                <img src={experience.gambar} alt="experience Image" loading="lazy" className="max-h-full max-w-full object-contain"/>
+              </div>
+              <div>
+                <h1 className="text-2xl font-bold my-4">{experience.nama}</h1>
+                <p className="text-base/loose mb-4">{experience.desk}</p>
+                <div className="flex flex-wrap gap-2 ">
+                  {experience.tools.map((tool, index) => (
+                    <p className="py-1 px-3 border border-zinc-500 bg-zinc-600 rounded-md font-semibold" key={index}>{tool}</p>
+                  ))}
+                </div>
+                <div className="mt-8 text-center">
+                  <a href="#" className="bg-blue-700 p-3 rounded-lg block border border-zinc-600 hover:bg-blue-600 ">View Documentation</a>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      {/* Experience */}
       {/* Kontak */}
       <div className="relative z-10 kontak mt-32 sm:p-10 p-0" id="contact">
         <h1 className="text-white text-4xl mb-2 font-bold text-center">Contact</h1>
