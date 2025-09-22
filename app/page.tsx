@@ -21,7 +21,7 @@ import 'animate.css';
 
 export default function Home() {
   return (
-    <div className=" min-h-screen overflow-x-hidden bg-[#19222D]">
+    <div className=" min-h-screen overflow-x-hidden bg-[#19222D] md:mt-10">
       <div className="fixed top-0 right-0 left-0 bottom-0 w-full h-full ">
         <Squares
           speed={0.5} 
@@ -99,7 +99,7 @@ export default function Home() {
                 </div>
 
                 <BlurText 
-                  text="Computer Science graduate majoring in Informatics with strong interest in data management, administrative systems, and Design graphic. Skilled in analysis, detail-oriented, and proficient in administrative and database tools. Recognized as disciplined, structured, and efficient in supporting systematic team operations."
+                  text="Computer Science graduate with strong interest in Internet of Things (IoT) and Front-End Development (React, Next.js, TypeScript, TailwindCSS). Experienced in developing IoT prototypes, smart automation systems, and interactive web applications. Skilled in system analysis, cloud integration, and building scalable solutions. Seeking to grow into a Fullstack Developer role combining IoT and web technologies."
                   delay={50}
                   animateBy="words"
                   direction="top"
@@ -118,7 +118,7 @@ export default function Home() {
                 </div> */}
                 <div className="flex flex-col gap-2 mb-28 sm:mb-12 -mt-6 sm:gap-4">
                   <a
-                    href="https://drive.google.com/file/d/1L_lYCYusfs6rrKzYqsO_Rx3W6umRrA3r/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1v_aD5I_-aRTCIrtihNShVVpRcjNBVnOi/view?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -171,7 +171,7 @@ export default function Home() {
         <div className="xl:w-2/3 lg:w-3/4 w-full mx-auto py-5 px-5 bg-zinc-800 rounded-lg">
           <img src="/assets/images/private/Internet of Things (2).png" alt="image" className="w-12 rounded-md mb-10 sm:hidden" />
           <p className = "text-sm sm:text-base md:text-lg leading-relaxed mb-10 text-white">
-          Hi there! I’m a Computer Science graduate with a focus in Informatics who loves exploring how technology can make life smarter and easier. I’m especially into IoT, microcontrollers, and automation, and I enjoy turning ideas into working prototypes using sensors, actuators, and cloud platforms. Beyond the tech side, I bring an organized and adaptive approach to every project, making sure solutions are not only functional but also impactful.
+          Hi there! I’m a Computer Science graduate passionate about Internet of Things (IoT) and Front-End Development with React, Next.js, TypeScript, and TailwindCSS. I enjoy building IoT prototypes, smart automation systems, and interactive web applications that connect the physical and digital world. With skills in system analysis, cloud integration, and scalable solution design, I aim to grow into a Fullstack Developer who can bring together IoT and web technologies to create impactful, real-world solutions.
           </p>
           <div className="flex items-center justify-between">
             <img src="/assets/images/private/Internet of Things (2).png" alt="image" className="w-12 rounded-md sm:block hidden" />
