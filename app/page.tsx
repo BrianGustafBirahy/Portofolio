@@ -18,6 +18,7 @@ import ScrollVelocity from "./components/ScrollVelocity/ScrollVelocity";
 import { listExperience } from "./db/experience";
 // import CircularText from "./components/CircularText/CircularText";
 import 'animate.css';
+import CertificateCarousel from "./components/Carousel/CertificateCarousel";
 
 export default function Home() {
   return (
@@ -225,6 +226,7 @@ export default function Home() {
         </div>
         {/* Tools */}
       </div>
+
 {/* Tentang */}
       {/* Proyek */}
       <div className="relative z-10 text-white proyek mt-32 px-4 sm:px-8 md:px-20 py-20" id="project">
@@ -253,6 +255,12 @@ export default function Home() {
         </div>
       </div>
       {/* Proyek */}
+
+      {/* Certificate */}
+      <section id="certificates" className="py-16">
+        <CertificateCarousel />
+      </section>
+
       {/* Experience */}
       <div className="relative z-10 text-white proyek mt-32 px-4 sm:px-8 md:px-20 py-20" id="project">
         <h1 className="text-center text-4xl font-bold mb-2 ">Organization Experience</h1>
