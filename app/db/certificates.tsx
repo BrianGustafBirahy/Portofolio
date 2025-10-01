@@ -38,9 +38,16 @@ export interface Certificate {
     {
       id: 5,
       title: "IBM Granite Models for Software Development",
-      provider: "IMB Skillsbuild X Hacktiv8",
+      provider: "IBM Skillsbuild X Hacktiv8",
       image: "/assets/images/certificates/GraniteModel.png",
       description: "Training use IBM Granite Models"
+    },
+    {
+      id: 5,
+      title: "Code Generation and Optimization Using IBM Granite",
+      provider: "IBM Skillsbuild",
+      image: "/assets/images/certificates/IBM.png",
+      description: ""
     },
   ];
   

@@ -22,7 +22,7 @@ import CertificateCarousel from "./components/Carousel/CertificateCarousel";
 
 export default function Home() {
   return (
-    <div className=" min-h-screen overflow-x-hidden bg-[#19222D] md:mt-10">
+    <div className=" min-h-screen overflow-x-hidden bg-[#19222D] md:mt-12">
       <div className="fixed top-0 right-0 left-0 bottom-0 w-full h-full ">
         <Squares
           speed={0.5} 
