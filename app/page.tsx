@@ -119,7 +119,7 @@ export default function Home() {
                 </div> */}
                 <div className="flex flex-col gap-2 mb-28 sm:mb-12 -mt-6 sm:gap-4">
                   <a
-                    href="https://drive.google.com/file/d/1bOtA4hhyfr6DDmXrE0lTwl80L8OXFl6L/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1BKwskH_7WyM_QgP_9bRWbukPAUVsoAru/view?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
